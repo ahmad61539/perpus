@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Perpustakaan Digital</h1>
+    </header>
+
+    <div class="container">
+        <input type="text" id="pencarian" placeholder="Cari buku..." onkeyup="cariBuku()">
+        
+        <div id="daftar-buku" class="buku-container"></div>
+    </div>
+
+    <div id="modal-detail" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="tutupModal()">&times;</span>
+            <div id="detail-buku"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
